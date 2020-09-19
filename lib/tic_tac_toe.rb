@@ -82,6 +82,6 @@ class TicTacToe
 
   def play
     turn until over?
-    puts winner ? "Yay! #{winner} won!" : "Tie!"
+    puts winner ? "Yay! Congratulations #{winner}, you won!" : "Tie!"
   end
 end
