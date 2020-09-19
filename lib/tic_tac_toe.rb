@@ -4,6 +4,6 @@ class TicTacToe
   end
 
   
-  
+
 
 end
