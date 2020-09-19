@@ -1,6 +1,6 @@
 class TicTacToe
   def initialize(board)
-    @board = board || Array.new ()
+    @board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
   WIN_COMBINATIONS = [
@@ -22,7 +22,7 @@ class TicTacToe
   end
 
   def move(index, token)
-    @board[index] != token
+    @board[index] = token
   end
 
   def position_taken?(index)
@@ -30,7 +30,7 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    !position_taken?(index) && index.between(0,8)
+    !position_taken?(index) && index.between?(0,8)
   end
 
   def turn
